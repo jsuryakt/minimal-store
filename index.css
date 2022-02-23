@@ -1,0 +1,17 @@
+@import url('./css/promo.css');
+
+.homepage-banner{
+    padding: 1rem;
+    margin: 2rem 1rem;
+}
+
+.homepage-banner img {
+    height: 25rem;
+    width: 100%;
+}
+
+.display-flex-col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
