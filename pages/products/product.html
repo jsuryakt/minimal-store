@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products - minimal store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jsuryakt/minimal-ui@main/minimal.css" />
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="nav-name">
+            <a href="/index.html"><button class="btn btn-transparent">minimal store</button></a>
+        </div>
+        <div class="nav-ele">
+            <a href="/pages/products/product.html"><button class="btn btn-transparent">shop now</button></a>
+            <a href="/pages/wishlist/wishlist.html"><button class="btn btn-transparent">wishlist</button></a>
+            <a href="/pages/cart/cart.html"><button class="btn btn-transparent">cart</button></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar content">
+            <div class="side-heads display-flex">
+                <h2 class="main-h2">Filters</h2>
+                <button class="btn btn-transparent clear-btn">Clear All</button>
+            </div>
+            <hr class="side-hr">
+            <!------------sort-filter------------->
+            <h3 class="main-h3">SORT</h3>
+            <div class="sort-filter display-flex flex-col mr-lr-1">
+                <div class="display-flex row-cross-center">
+                    <input type="radio" checked="checked" name="radio" id="highToLowSort">
+                    <label class="radio-list" for="highToLowSort">Higher to Lower</label>
+                </div>
+
+                <div class="display-flex row-cross-center">
+                    <input type="radio" name="radio" id="lowToHighSort">
+                    <label class="radio-list" for="lowToHighSort">Lower to Higher</label>
+                </div>
+            </div>
+            <hr class="side-hr">
+            <!------------category-filter------------->
+            <h3 class="main-h3">CATEGORIES</h3>
+            <div class="category-filter display-flex flex-col mr-lr-1">
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox" checked="checked" id="phone">
+                    <label class="check-list" for="">Phones</label>
+                </div>
+
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox">
+                    <label class="check-list" for="">Speakers</label>
+                </div>
+
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox">
+                    <label class="check-list" for="">Earphones</label>
+                </div>
+
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox">
+                    <label class="check-list" for="">Laptops</label>
+                </div>
+
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox" checked="checked">
+                    <label class="check-list" for="">Tablets</label>
+                </div>
+
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox">
+                    <label class="check-list" for="">Smart Watches</label>
+                </div>
+
+            </div>
+            <hr class="side-hr">
+            <!------------brand-filter------------->
+            <h3 class="main-h3">BRANDS</h3>
+            <div class="brand-filter display-flex flex-col mr-lr-1">
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox" checked="checked">
+                    <label class="check-list">Apple</label>
+                </div>
+
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox">
+                    <label class="check-list">Lenovo</label>
+                </div>
+
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox">
+                    <label class="check-list">Boat</label>
+                </div>
+
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox">
+                    <label class="check-list">OnePlus</label>
+                </div>
+
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox" checked="checked">
+                    <label class="check-list">Xioami</label>
+                </div>
+
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox">
+                    <label class="check-list">Realme</label>
+                </div>
+
+            </div>
+            <hr class="side-hr">
+            <!------------Stock-filter------------->
+            <h3 class="main-h3">STOCK</h3>
+            <div class="stock-filter mr-lr-1">
+                <div class="display-flex row-cross-center">
+                    <input type="checkbox">
+                    <label class="check-list">Include out of stock</label>
+                </div>
+            </div>
+            <hr class="side-hr">
+            <!------------Rating-filter------------->
+            <div class="rating-filter">
+                <h3 class="main-h3">RATING</h3>
+                <label for="volume" class="rate-list">Rating</label>
+                <div class="slider-container">
+                    <input type="range" id="volume" name="volume" min="1" max="5" class="slider round-slider">
+                </div>
+            </div>
+        </div>
+
+        <!-- main content -->
+
+        <div class="main content">
+            <div class="products display-flex row-main-center flex-wrap gap-1">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="img-v">
+                            <img src="https://picsum.photos/170" />
+                        </div>
+                        <div class="card-title-desc">
+                            <h3>Product</h3>
+                            <p>₹70,000</p>
+                        </div>
+                    </div>
+
+                    <div class="card-action-btn">
+                        <button class="btn btn-secondary">Add to Cart</button>
+                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                        <button class="icon-hover"><i class="bi bi-share"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="img-v">
+                            <img src="https://picsum.photos/170" />
+                        </div>
+                        <div class="card-title-desc">
+                            <h3>Product</h3>
+                            <p>₹70,000</p>
+                        </div>
+                    </div>
+
+                    <div class="card-action-btn">
+                        <button class="btn btn-secondary">Add to Cart</button>
+                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                        <button class="icon-hover"><i class="bi bi-share"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="img-v">
+                            <img src="https://picsum.photos/170" />
+                        </div>
+                        <div class="card-title-desc">
+                            <h3>Product</h3>
+                            <p>₹70,000</p>
+                        </div>
+                    </div>
+
+                    <div class="card-action-btn">
+                        <button class="btn btn-secondary">Add to Cart</button>
+                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                        <button class="icon-hover"><i class="bi bi-share"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="img-v">
+                            <img src="https://picsum.photos/170" />
+                        </div>
+                        <div class="card-title-desc">
+                            <h3>Product</h3>
+                            <p>₹70,000</p>
+                        </div>
+                    </div>
+
+                    <div class="card-action-btn">
+                        <button class="btn btn-secondary">Add to Cart</button>
+                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                        <button class="icon-hover"><i class="bi bi-share"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="img-v">
+                            <img src="https://picsum.photos/170" />
+                        </div>
+                        <div class="card-title-desc">
+                            <h3>Product</h3>
+                            <p>₹70,000</p>
+                        </div>
+                    </div>
+
+                    <div class="card-action-btn">
+                        <button class="btn btn-secondary">Add to Cart</button>
+                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                        <button class="icon-hover"><i class="bi bi-share"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="img-v">
+                            <img src="https://picsum.photos/170" />
+                        </div>
+                        <div class="card-title-desc">
+                            <h3>Product</h3>
+                            <p>₹70,000</p>
+                        </div>
+                    </div>
+
+                    <div class="card-action-btn">
+                        <button class="btn btn-secondary">Add to Cart</button>
+                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                        <button class="icon-hover"><i class="bi bi-share"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

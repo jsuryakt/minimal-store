@@ -1,0 +1,101 @@
+p {
+  margin: 0;
+}
+
+.clear-btn {
+  margin:1rem;
+  color: var(--black-clr);
+}
+
+.container {
+  margin: 1.25rem;
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  position: sticky;
+  top: 1rem;
+  z-index: 9999;
+  height: 30vh;
+  /* flex-basis: 12.5rem; */
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.main-h3 {
+  margin: 0.5rem 1rem;
+}
+
+.main {
+  /* flex-grow: 1; */
+  max-width: 1030px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.content {
+  height: fit-content;
+  /* font-weight: 600; */
+  font-size: 1.1rem;
+  /* padding: 1rem; */
+  border-radius: 1rem;
+  background-color: var(--under-clr);
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column
+}
+
+.products {
+  padding:1rem;
+}
+
+.gap-1 {
+  gap: 3rem;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.side-heads {
+  align-items: center;
+  justify-content: space-between;
+}
+
+hr {
+  width: 80%;
+}
+
+.radio-list, .check-list, .rate-list {
+  margin: 0rem 1rem;
+}
+
+.slider-container {
+  padding: 1rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  display: inline;
+}
+
+.mr-lr-1 {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.row-cross-center {
+  align-items: center;
+}
+
+.row-main-center {
+  justify-content: center;
+}
