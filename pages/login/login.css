@@ -1,0 +1,31 @@
+.login-form {
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.input-box {
+    width: unset;
+    max-width: 20rem;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.login {
+    margin: 1rem;
+    align-items: center;
+}
+
+.login button {
+    width: 8rem;
+}
+
+.black-clr {
+    color:var(--black-clr)
+}

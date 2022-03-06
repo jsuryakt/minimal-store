@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login - minimal store</title>
+    <title>register - minimal store</title>
     <link rel="stylesheet" href="https://minimal.jsuryakt.codes/minimal.css" />
     <link rel="stylesheet" href="/pages/products/product.css">
     <link rel="stylesheet" href="/pages/login/login.css">
@@ -26,8 +26,12 @@
     <div class="container display-flex flex-col gap-1">
         <div class="main content">
             <div class="login-form">
-                <h2 class="main-h2 text-align-center">login</h2>
+                <h2 class="main-h2 text-align-center">register</h2>
                 <form method="POST" class="display-flex flex-col gap-1">
+                    <div class="form-group display-flex flex-col gap-pt5">
+                        <label for="name">name</label>
+                        <input type="text" name="name" id="name" class="form-control input-box input-md" placeholder="name" required>
+                    </div>
                     <div class="form-group display-flex flex-col gap-pt5">
                         <label for="email">email</label>
                         <input type="email" name="email" id="email" class="form-control input-box input-md" placeholder="email" required>
@@ -36,13 +40,17 @@
                         <label for="password">password</label>
                         <input type="password" name="password" id="password" class="form-control input-box input-md" placeholder="password" required>
                     </div>
+                    <div class="form-group display-flex flex-col gap-pt5">
+                        <label for="password">confirm password</label>
+                        <input type="password" name="password" id="password" class="form-control input-box input-md" placeholder="re-enter password" required>
+                    </div>
                     <div class="form-group display-flex flex-col login">
-                        <button type="submit" class="btn btn-primary">login</button>
+                        <button type="submit" class="btn btn-primary">register</button>
                     </div>
                 </form>
             </div>
         </div>
-        <p>Don't have an account?<span><a href="/pages/register/register.html"><button class="btn btn-transparent black-clr pd-pt5"> register </button></a></span></p>
+        <p>Already have an account?<span><a href="/pages/login/login.html"><button class="btn btn-transparent black-clr pd-pt5"> login </button></a></span></p>
     </div>
 </body>
 </html>

@@ -58,8 +58,20 @@ p {
   padding:1rem;
 }
 
+.gap-pt5 {
+  gap: 0.5rem;
+}
+
 .gap-1 {
+  gap: 1rem;
+}
+
+.gap-3 {
   gap: 3rem;
+}
+
+.pd-pt5{
+  padding: 0.5rem;
 }
 
 .flex-wrap {
