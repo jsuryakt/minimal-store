@@ -13,11 +13,11 @@ p {
 }
 
 .sidebar {
-  width: 20%;
+  /* width: 20%; */
   position: sticky;
   top: 1rem;
-  z-index: 9999;
-  height: 30vh;
+  /* z-index: 9999; */
+  /* height: 10vh; */
   /* flex-basis: 12.5rem; */
   margin-right: 1rem;
   display: flex;
@@ -102,4 +102,25 @@ input[type="radio"], input[type="checkbox"] {
 
 .icon-hover {
   background-color: var(--white-clr);
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: var(--under-clr);
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--secondary-clr);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--overlap-clr);
+}
+
+@media screen and (max-width: 620px) {
+  .sidebar {
+    display: none;
+    margin: 0.5rem;
+  }
 }

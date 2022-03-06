@@ -69,3 +69,17 @@
   align-items: center;
   flex-direction: column;
 }
+
+html::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: var(--under-clr);
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--secondary-clr);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--overlap-clr);
+}
