@@ -99,3 +99,7 @@ input[type="radio"], input[type="checkbox"] {
 .row-main-center {
   justify-content: center;
 }
+
+.icon-hover {
+  background-color: var(--white-clr);
+}
