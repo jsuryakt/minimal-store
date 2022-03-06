@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart - minimal store</title>
+    <link rel="stylesheet" href="https://minimal.jsuryakt.codes/minimal.css" />
+    <link rel="stylesheet" href="/pages/products/product.css">
+    <link rel="stylesheet" href="/pages/cart/cart.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="nav-name">
+            <a href="/index.html"><button class="btn btn-transparent">minimal store</button></a>
+        </div>
+        <div class="nav-ele">
+            <a href="/pages/products/product.html"><button class="btn btn-transparent">shop now</button></a>
+            <a href="/pages/wishlist/wishlist.html"><button class="btn btn-transparent">wishlist</button></a>
+            <a href="/pages/cart/cart.html"><button class="btn btn-transparent">cart</button></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="side content">
+            <h3 class="main-h3">My Cart</h3>
+            <div class="products display-flex flex-col gap-1">
+                <div class="card">
+                    <div class="card-header horizontal">
+                        <div class="img-h">
+                            <img src="https://picsum.photos/110" />
+                        </div>
+                        <div class="card-title-desc">
+                            <h3>Product</h3>
+                            <p>₹70,000</p>
+                        </div>
+                    </div>
+
+                    <div class="card-action-btn">
+                        <button class="btn btn-primary">Move to Wishlist</button>
+                        <div class="display-flex shrink-btn">
+                            <button class="icon-hover"><i class="bi bi-plus-circle"></i></button>
+                            <input class="quantity" value="1" type="number" step="1" min="0" max="10" />
+                            <button class="icon-hover"><i class="bi bi-dash-circle"></i></button>
+                        </div>
+                        <button class="btn btn-secondary">Delete</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header horizontal">
+                        <div class="img-h">
+                            <img src="https://picsum.photos/110" />
+                        </div>
+                        <div class="card-title-desc">
+                            <h3>Product</h3>
+                            <p>₹70,000</p>
+                        </div>
+                    </div>
+
+                    <div class="card-action-btn">
+                        <button class="btn btn-primary">Move to Wishlist</button>
+                        <div class="display-flex shrink-btn">
+                            <button class="icon-hover"><i class="bi bi-plus-circle"></i></button>
+                            <input class="quantity" value="1" type="number" step="1" min="0" max="10" />
+                            <button class="icon-hover"><i class="bi bi-dash-circle"></i></button>
+                        </div>
+                        <button class="btn btn-secondary">Delete</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header horizontal">
+                        <div class="img-h">
+                            <img src="https://picsum.photos/110" />
+                        </div>
+                        <div class="card-title-desc">
+                            <h3>Product</h3>
+                            <p>₹70,000</p>
+                        </div>
+                    </div>
+
+                    <div class="card-action-btn">
+                        <button class="btn btn-primary">Move to Wishlist</button>
+                        <div class="display-flex shrink-btn">
+                            <button class="icon-hover"><i class="bi bi-plus-circle"></i></button>
+                            <input class="quantity" value="1" type="number" step="1" min="0" max="10" />
+                            <button class="icon-hover"><i class="bi bi-dash-circle"></i></button>
+                        </div>
+                        <button class="btn btn-secondary">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main content -->
+
+        <div class="main content">
+            <div class="cart-price display-flex flex-col">
+                <h2 class="main-h2">PRICE DETAILS</h2>
+                <div class="price-cart">
+                    <div class="price-list display-flex">
+                        <h4 class="main-h4">Total Price :</h4>
+                        <h4 class="main-h4">₹2,10,000</h4>
+                    </div>
+                    <div class="price-list display-flex">
+                        <h4 class="main-h4">Discount :</h4>
+                        <h4 class="main-h4">₹15,000</h4>
+                    </div>
+                    <div class="price-list display-flex">
+                        <h4 class="main-h4">Delivery Charges :</h4>
+                        <h4 class="main-h4">Free</h4>
+                    </div>
+                    <div class="price-list display-flex">
+                        <h4 class="main-h4">Total Price :</h4>
+                        <h4 class="main-h4">₹1,95,000</h4>
+                    </div>
+                </div>
+                <button class="btn btn-primary checkout-btn">CHECKOUT</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
