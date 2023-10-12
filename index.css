@@ -70,6 +70,24 @@
   flex-direction: column;
 }
 
+footer {
+  padding: 1rem;
+  background-color: var(--overlap-clr);
+  color: var(--white-clr);
+}
+
+footer span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+footer a {
+  color: var(--secondary-clr);
+  text-decoration: none;
+}
+
 html::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: var(--under-clr);
