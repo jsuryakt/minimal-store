@@ -1,5 +1,7 @@
 # Minimal Store
 
+Check it out here [minimal-store](https://minimal-commerce.netlify.app)
+
 Minimal Store is a simple and elegant online store template made using [minimal-ui](https://github.com/jsuryakt/minimal-ui) that offers a clean and visually appealing design. This template is perfect for anyone looking to create an online store for various products. It features a minimalistic design that focuses on the essentials, making it easy for users to navigate and explore your offerings.
 
 ## Features
